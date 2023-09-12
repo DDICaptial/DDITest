@@ -106,8 +106,8 @@ class Section179 extends React.Component {
         }
         if (goodValue) {
             const taxBrack = document.getElementById('taxBrack').value;
-            const deduction = purchaseAmount >= 1050000 ? 1050000 : purchaseAmount;
-            const bonus = deduction >= 1040000 ? purchaseAmount - 1040000 : '-';
+            const deduction = purchaseAmount >= 1160000 ? 1160000 : purchaseAmount;
+            const bonus = deduction >= 1160000 ? purchaseAmount - 1160000 : '-';
             const firstYearDeduction = deduction;
             const CashSavings = purchaseAmount * taxBrack;
             const LoweredCost = purchaseAmount - CashSavings;
