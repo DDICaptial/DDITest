@@ -106,7 +106,7 @@ class Section179 extends React.Component {
         }
         if (goodValue) {
             const taxBrack = document.getElementById('taxBrack').value;
-            const deduction = purchaseAmount >= 1050000 ? 1050000 : purchaseAmount;
+            const deduction = purchaseAmount >= 1160000 ? 1160000 : purchaseAmount;
             const bonus = deduction >= 1040000 ? purchaseAmount - 1040000 : '-';
             const firstYearDeduction = deduction;
             const CashSavings = purchaseAmount * taxBrack;
@@ -199,7 +199,7 @@ class Section179 extends React.Component {
                             <div>${this.state.deducation}</div>
                             <div>
                                 <p>Bonus Depreciation:</p>
-                                <p>(100% in {this.state.date.getFullYear()})</p>
+                                <p>(80% in {this.state.date.getFullYear()})</p>
                             </div>
                             <div>${this.state.bonus}</div>
                             <div>Normal First Year Depreciation:</div>
